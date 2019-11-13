@@ -1,0 +1,6 @@
+<h1 class="textCenter description font20">{{quest.description}}</h1>
+
+<h1 class="font10 textCenter">{{quest.startDate | date:'shortDate'}} - {{quest.endDate | date:'shortDate'}}</h1>
+
+<input class="textCenter" type="checkbox" [checked]="quest.completed"  (change)="completeTask()">
+<h1 (click)="remove()" class="remove">-</h1>
